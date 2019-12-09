@@ -9,25 +9,29 @@
 /* Begin PBXBuildFile section */
 		9DEA374A239C7757003885E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA3749239C7757003885E1 /* AppDelegate.swift */; };
 		9DEA374C239C7757003885E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA374B239C7757003885E1 /* SceneDelegate.swift */; };
-		9DEA374E239C7757003885E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA374D239C7757003885E1 /* ViewController.swift */; };
+		9DEA374E239C7757003885E1 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA374D239C7757003885E1 /* UserSearchViewController.swift */; };
 		9DEA3751239C7757003885E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEA374F239C7757003885E1 /* Main.storyboard */; };
 		9DEA3753239C7758003885E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEA3752239C7758003885E1 /* Assets.xcassets */; };
 		9DEA3756239C7758003885E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEA3754239C7758003885E1 /* LaunchScreen.storyboard */; };
 		9DEA375F239C7BFF003885E1 /* TableViewUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA375D239C7BFF003885E1 /* TableViewUserCell.swift */; };
 		9DEA3760239C7BFF003885E1 /* TableViewUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DEA375E239C7BFF003885E1 /* TableViewUserCell.xib */; };
+		9DEA3763239E9687003885E1 /* RepoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA3762239E9687003885E1 /* RepoSearchViewController.swift */; };
+		9DEA3765239E96AE003885E1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEA3764239E96AE003885E1 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9DEA3746239C7757003885E1 /* GitUserSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitUserSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEA3749239C7757003885E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DEA374B239C7757003885E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9DEA374D239C7757003885E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DEA374D239C7757003885E1 /* UserSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
 		9DEA3750239C7757003885E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DEA3752239C7758003885E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DEA3755239C7758003885E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DEA3757239C7758003885E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DEA375D239C7BFF003885E1 /* TableViewUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUserCell.swift; sourceTree = "<group>"; };
 		9DEA375E239C7BFF003885E1 /* TableViewUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewUserCell.xib; sourceTree = "<group>"; };
+		9DEA3762239E9687003885E1 /* RepoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchViewController.swift; sourceTree = "<group>"; };
+		9DEA3764239E96AE003885E1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +66,49 @@
 			children = (
 				9DEA3749239C7757003885E1 /* AppDelegate.swift */,
 				9DEA374B239C7757003885E1 /* SceneDelegate.swift */,
-				9DEA374D239C7757003885E1 /* ViewController.swift */,
-				9DEA374F239C7757003885E1 /* Main.storyboard */,
-				9DEA375D239C7BFF003885E1 /* TableViewUserCell.swift */,
-				9DEA375E239C7BFF003885E1 /* TableViewUserCell.xib */,
+				9DEA3766239E96CC003885E1 /* Model */,
+				9DEA3761239E962F003885E1 /* View Controllers */,
+				9DEA3767239EA9DA003885E1 /* Storyboards */,
+				9DEA3768239EA9F3003885E1 /* Views */,
 				9DEA3752239C7758003885E1 /* Assets.xcassets */,
 				9DEA3754239C7758003885E1 /* LaunchScreen.storyboard */,
 				9DEA3757239C7758003885E1 /* Info.plist */,
 			);
 			path = GitUserSearchApp;
+			sourceTree = "<group>";
+		};
+		9DEA3761239E962F003885E1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DEA374D239C7757003885E1 /* UserSearchViewController.swift */,
+				9DEA3762239E9687003885E1 /* RepoSearchViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9DEA3766239E96CC003885E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DEA3764239E96AE003885E1 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DEA3767239EA9DA003885E1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9DEA374F239C7757003885E1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9DEA3768239EA9F3003885E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DEA375D239C7BFF003885E1 /* TableViewUserCell.swift */,
+				9DEA375E239C7BFF003885E1 /* TableViewUserCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEA3763239E9687003885E1 /* RepoSearchViewController.swift in Sources */,
+				9DEA3765239E96AE003885E1 /* UserModel.swift in Sources */,
 				9DEA375F239C7BFF003885E1 /* TableViewUserCell.swift in Sources */,
-				9DEA374E239C7757003885E1 /* ViewController.swift in Sources */,
+				9DEA374E239C7757003885E1 /* UserSearchViewController.swift in Sources */,
 				9DEA374A239C7757003885E1 /* AppDelegate.swift in Sources */,
 				9DEA374C239C7757003885E1 /* SceneDelegate.swift in Sources */,
 			);

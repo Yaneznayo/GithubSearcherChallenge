@@ -45,20 +45,37 @@
             </objects>
             <point key="canvasLocation" x="1305" y="27"/>
         </scene>
-        <!--View Controller-->
+        <!--Github Searcher-->
         <scene sceneID="ujq-FE-wW8">
             <objects>
                 <viewController id="gyK-sx-7vx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aJ0-f4-MJF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E7Z-sQ-nsx">
+                                <rect key="frame" x="16" y="44" width="235" height="125"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0st-20-VKn">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="eOE-iT-ztB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zAX-0n-tVr">
+                                        <rect key="frame" x="125" y="0.0" width="110" height="125"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="jmA-Xp-GX1"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Github Searcher" id="27o-zH-tAm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fb-cj-GTW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1959" y="27"/>
+            <point key="canvasLocation" x="1304.8" y="692.20389805097454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5eU-6w-2Jr">
@@ -77,6 +94,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eb1-ZP-Nub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="621.60000000000002" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Ae-tk-jcP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9me-Xo-ef4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pml-fZ-ofb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gyK-sx-7vx" kind="relationship" relationship="rootViewController" id="DaM-6w-kue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNe-3V-V3c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="693"/>
         </scene>
     </scenes>
 </document>
